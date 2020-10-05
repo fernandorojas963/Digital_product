@@ -1,0 +1,72 @@
+
+
+.fadeIn{
+
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both; /*La animacion se va a cumplir de ida y de regreso*/
+  -webkit-animation-name: fadeIn;
+/* -webkit- asegura q los valores se puedan cumplir. Es un pack predefinido que se acopla a todos los navegadores */
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+/* Para aplicar la animacion, llevamos la clase (en este caso .fadein) y la ubicamos en el elemento html */
+
+
+
+.fadeInDown{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+
+}
+
+@keyframes fadeInDown {
+
+  from{
+    opacity: 0;
+    -webkit-transform: translate3d(0,-100%, 0);
+    transform: translate3d(0,-100%, 0);
+
+  }
+
+  to{
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+}
+
+
+
+.fadeInUp{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+
+}
+
+@keyframes fadeInUp {
+
+  from{
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+
+
+  }
+
+  to{
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+
+  }
+
+}

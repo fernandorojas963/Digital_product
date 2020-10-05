@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap');
+
+/* Variables */
+:root{
+
+  /* Colors */
+--green-color:#2DEA4A;
+--white-color:white;
+--dark-color:#17341C;
+--hover-color:#ac68ca;
+
+/* Espaciado */
+
+--space1:15%;
+
+/* Box shadow */
+--box:3px 3px 5px #abacab;
+
+/* Border */
+--border:0px solid #FF0000;
+--border-azul:0px solid #0062FF;
+
+/* Font size */
+--normal: 12px;
+
+}
+
+
+html, body{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Baloo 2', cursive;
+
+}
+
+/* -----------------------AQUI EMPIEZA LA NAV BAR -------------------------*/
+
+nav{
+
+  background-color: var(--green-color);
+  padding: 15px var(--space1);
+  color: var(--white-color);
+  display: flex;
+  /*Separa los elementos con un espacio intermedio*/
+  align-items:center;
+  justify-content: space-between;
+
+}
+
+
+
+nav ul{
+  display: flex;
+
+
+}
+
+nav li{
+
+  padding-right: 60px;
+  list-style: none;
+
+}
+
+nav li a{
+  color: var(--dark-color);
+  text-decoration: none;
+
+}
+
+nav li a:hover{
+  color: var(--white-color);
+
+}
+
+
+/*----------------------------Main section---------------------------*/
+
+.container{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header{
+  padding: 100px 0px;
+}
+
+.row{
+  display: flex;
+}
+
+
+.col-1{
+  width: 12.5%
+}
+
+.col-2{
+  width: 25%
+}
+.col-3{
+  width: 37.5%
+}
+.col-4{
+  width: 50%
+}
+
+.col-5{
+  width: 62.5%
+}
+
+.col-6{
+  width: 75%
+}
+
+.col-7{
+  width: 87.5%
+}
+
+.col-8{
+  width: 100%
+}
+
+
+
+[class*="col-"] {
+  padding: 50px;
+}
+
+
+
+@media (max-width: 900px) {
+
+  .header{
+    padding: 10px;
+  }
+
+  .container{
+    width: 100%;
+    margin: inherit;
+  }
+
+.row{
+  display: inherit;
+}
+
+
+
+[class*="col-"] {
+  padding: 10px;
+}
+
+}
+
+
+/* ---------------------------FOOTER------------------------- */
+
+footer{
+  padding: 15px var(--space1);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--green-color);
+  color: var(--dark-color);
+
+
+}

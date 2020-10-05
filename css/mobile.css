@@ -1,0 +1,34 @@
+/* Recordar linkear este archivo en el html */
+
+@media (max-width: 600px) {
+  /* Aqui le dijo que por debajo del Los 600px active las siguientes reglas */
+
+
+.products{
+  display: inherit;
+  height: auto; /*Quito la altura determinada y ahora dejo que crezca de forma natural*/
+  padding: 2%;
+
+}
+
+.product{
+  margin: auto;
+
+}
+
+.main_section{
+  padding: 4%;
+
+}
+
+
+
+
+
+
+.beneficios, .comentarios{
+  display: inherit;
+  padding: 4%;
+
+
+}

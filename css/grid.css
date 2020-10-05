@@ -1,0 +1,151 @@
+:root{
+  --col-width: 8,3333333333%;
+}
+
+
+.container{
+  max-width: 1000px;
+  margin: auto;
+  border: 1px solid red;
+
+
+}
+
+.row{
+  display: flex;
+  /* flex-flow: wrap; */
+
+}
+
+
+/* DIVIDO EL 100% POR EL NUMERO DE COLUMNAS QUE QUIERO IMPLEMENTAR */
+
+
+.col-1{
+  width: 8.3333333333%;
+}
+
+.col-2{
+  width: 16.6666666666%;
+}
+
+.col-3{
+  width: 24.9999999999%;
+}
+
+.col-4{
+  width: 33.3333333332%;
+}
+
+.col-5{
+  width: 41.6666666665%;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-7{
+  width: 58.3333333331%;
+}
+
+.col-8{
+  width: 66.6666666664%;
+}
+
+.col-9{
+  width: 74.9999999997%;
+}
+
+.col-10{
+  width: 83.333333333%;
+}
+
+.col-11{
+  width: 91.6666666663%;
+}
+
+.col-12{
+  width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+
+/* En lugar de situar todos los valores col-, puedo hacer lo siguiente: */
+
+[class*="col-"] /* Selecciona los atributos class cuyos valores tenga una subcadena col- */
+{
+
+  padding: 10px;
+  border: 1px solid green;
+
+}
+
+
+@media (max-width: 900px) {
+
+.row{
+  display: inherit;
+}
+
+[class*="col-"]{ /* Selecciona los atributos class cuyos valores tenga una subcadena col- */
+
+
+  width: 100%;
+  border: 1px solid green;
+
+}
+
+}
+
+/*
+
+CREAR UNA VARIABLE PARA TENER QUE METER TODOS LOS PORCENTAJES A MANO:
+
+.column-1 {
+  width: var(--col-width) *1);
+}
+
+.column-2 {
+  width: calc(var(--col-width) *2);
+}
+
+.column-3 {
+  width: calc(var(--col-width) *3);
+}
+
+.column-4 {
+  width: calc(var(--col-width) *4);
+}
+
+.column-5 {
+  width: calc(var(--col-width) *5);
+}
+
+.column-6 {
+  width: calc(var(--col-width) *6);
+}
+
+.column-7 {
+  width:calc(var(--col-width) *7);
+}
+
+.column-8 {
+  width: calc(var(--col-width) *8);
+}
+
+.column-9 {
+  width: calc(var(--col-width) *9);
+}
+
+.column-10 {
+  width: calc(var(--col-width) *10);
+}
+
+.column-11 {
+  width: calc(var(--col-width) *11);
+}
+
+.column-12 {
+  width: calc(var(--col-width) *12);
+} */

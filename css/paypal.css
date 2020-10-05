@@ -1,0 +1,16 @@
+body{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Viewport Heiht: Significa que toma el alto de la pantalla como ref*/
+
+
+
+}
+
+.content_success a {
+  color: var(--green-color);
+}

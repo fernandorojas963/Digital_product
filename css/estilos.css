@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap');
+
+/* Variables */
+:root{
+
+  /* Colors */
+--green-color:#2DEA4A;
+--white-color:white;
+--dark-color:#17341C;
+--hover-color:#ac68ca;
+
+/* Espaciado */
+
+--space1:15%;
+
+/* Box shadow */
+--box:3px 3px 5px #abacab;
+
+/* Border */
+--border:0px solid #FF0000;
+--border-azul:0px solid #0062FF;
+
+/* Font size */
+--normal: 12px;
+
+}
+
+
+htm, body{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Baloo 2', cursive;
+
+}
+
+/* -----------------------AQUI EMPIEZA LA NAV BAR -------------------------*/
+
+nav{
+
+  background-color: var(--green-color);
+  padding: 15px var(--space1);
+  color: var(--white-color);
+  display: flex;
+  /*Separa los elementos con un espacio intermedio*/
+  align-items:center;
+  justify-content: space-between;
+
+}
+
+
+
+nav ul{
+  display: flex;
+
+
+}
+
+nav li{
+
+  padding-right: 60px;
+  list-style: none;
+
+}
+
+nav li a{
+  color: var(--dark-color);
+  text-decoration: none;
+
+}
+
+nav li a:hover{
+  color: var(--white-color);
+
+}
+
+label{
+  font-size: var(--normal);
+
+}
+/*----------------------------Main section---------------------------*/
+
+
+.main_section{
+
+  padding: 15%;
+  text-align: center;
+  border: var(--border-azul);
+
+
+}
+
+/*PONDRE EL FONDO DE LA FORMA CURVADA */
+
+.products{
+  background-image: url("../images/fondo1.png");
+  height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 15%; /*Con este padding le doy una separacion entre cards*/
+  display: flex;
+
+}
+
+.product {
+  padding: 20px;
+  margin-top: -250px;
+
+  border: var(--border);
+}
+
+.product .content {
+  background-color: var(--white-color);
+  padding: 20px;
+  box-shadow: var(--box);
+  border-radius: 20px;
+
+}
+
+
+.product .content .image_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border: none;
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+
+
+}
+
+.main_button:hover{
+  background-color: var(--hover-color);
+}
+
+/* ---------------------------   BENEFICIOS   ---------------------- */
+
+.beneficios{
+  /* padding: 30px 0px 30px 0px; */
+  padding: 15%;
+  /* height: 300px; */
+  display: flex;
+  border: var(--border);
+
+
+}
+
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+  border: var(--border);
+  /* padding: 20px;
+  height: auto;
+  border: var(--border);
+  box-shadow: var(--box); */
+}
+
+.beneficio img{
+  max-height: 100px;
+}
+
+
+/* ---------------------------   COMENTARIOS   ---------------------- */
+
+
+.comentarios_title h2{
+  text-align: center;
+}
+
+
+.comentarios{
+  padding: 5% 15%;
+  display: flex;
+  border: var(--border);
+}
+
+.comentario img{
+  width: 100%;
+}
+
+.comentario{
+  border: var(--border-azul);
+  padding: 10px;
+
+}
+
+.content_comentario{
+  box-shadow: var(--box);
+  border: var(--border);
+
+}
+
+.comentario .text{
+  padding: 20px;
+  border: var(--border-azul);
+
+}
+
+.content_comentario:hover{
+  background-color: var(--hover-color);
+  color: var(--white-color);
+
+}
+
+/* -----------------------VENTA */
+
+
+.modulo_pago{
+
+  background-color:var(--white-color);
+  box-shadow: var(--box);
+  padding: 10px;
+
+
+}
+.modulo_pago_images{
+  max-width: 150;
+  text-align: center;
+  margin: auto;
+
+}
+
+.data{  /* Los label ya tienen una cofiguracion de padding predetermnada que impide poder personalizar ese valor. Para eso hacemos los siguiente*/
+
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #ececec;
+  color: #7d7d7d;
+  box-sizing: border-box; /*Box sizing define desde donde se toma como referencia el width*/
+
+
+}
+
+
+[class*="input-"] {
+
+  padding-bottom: 10px;
+}
+
+.modulo_pago .main_button /* Significa: A todos los main_button que esten dentro de modulo_pago...*/
+{
+  margin-top: 10px;
+}
+
+/* ---------------------------FOOTER------------------------- */
+
+footer{
+  padding: 15px var(--space1);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--green-color);
+  color: var(--dark-color);
+
+
+}
